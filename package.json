@@ -1,7 +1,13 @@
 {
   "name": "sl-component-example",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "babel": {
+    "presets": [ "@babel/react" ]
+  },
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -27,5 +33,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5"
   }
 }
