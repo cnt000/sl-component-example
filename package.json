@@ -1,12 +1,14 @@
 {
   "name": "sl-component-example",
-  "version": "0.1.0",
+  "version": "0.3.3",
   "private": false,
   "license": "ISC",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "babel": {
-    "presets": [ "@babel/react" ]
+    "presets": [
+      "@babel/react"
+    ]
   },
   "dependencies": {
     "react": "^16.8.6",
@@ -17,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish:npm": "SET NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src --out-dir dist --copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +39,9 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cnt000/sl-component-example"
   }
 }
